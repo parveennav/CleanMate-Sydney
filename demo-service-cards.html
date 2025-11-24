@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Service Cards - Demo</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/service-cards.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+
+        .demo-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #004a94 0%, #38b6ff 100%);
+            color: white;
+            border-radius: 16px;
+        }
+
+        .demo-header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-family: 'Exo', sans-serif;
+        }
+
+        .demo-header p {
+            font-size: 18px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .demo-info {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .demo-info h2 {
+            font-size: 28px;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-family: 'Exo', sans-serif;
+        }
+
+        .demo-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .demo-info li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #606060;
+            line-height: 1.6;
+        }
+
+        .demo-info li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #38b6ff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .demo-header h1 {
+                font-size: 28px;
+            }
+
+            .demo-header p {
+                font-size: 16px;
+            }
+
+            .demo-info {
+                padding: 20px;
+            }
+
+            .demo-info h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="demo-header">
+            <h1>🧹 Professional Service Cards</h1>
+            <p>10 Beautiful, Fully Responsive Service Cards with Gradient Backgrounds & Smooth Animations</p>
+        </div>
+
+        <div class="demo-info">
+            <h2>✨ Features Included</h2>
+            <ul>
+                <li><strong>10 Unique Service Cards</strong> - Each with distinct gradient background</li>
+                <li><strong>Font Awesome Icons</strong> - Professional icons for each service</li>
+                <li><strong>Hover Effects</strong> - Card lift, icon scale, gradient shine animation</li>
+                <li><strong>Responsive Grid</strong> - 3 columns → 2 columns → 1 column</li>
+                <li><strong>Staggered Animations</strong> - Cards fade in with 0.05s delay between each</li>
+                <li><strong>Modern Design</strong> - Rounded corners, shadows, gradient headers</li>
+                <li><strong>Link Interactions</strong> - Underline animation on hover</li>
+                <li><strong>Accessibility</strong> - Keyboard navigation, reduced motion support</li>
+                <li><strong>Mobile Optimized</strong> - Touch-friendly, perfect on all devices</li>
+                <li><strong>Print Friendly</strong> - Optimized styles for printing</li>
+            </ul>
+        </div>
+
+        <!-- Service Cards Section -->
+        <section class="services-grid-section" id="services-grid">
+            <div class="services-cards-grid">
+                
+                <!-- Card 1: Janitorial Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Janitorial Service in Sydney</h3>
+                        <p class="service-card-description">HygieneXperts – Sydney Commercial Cleaning provides comprehensive janitorial maintenance programs for Sydney businesses. Our services include full-facility cleaning, day porter services, restroom supply replenishment, trash removal and recycling management, and hard surface floor care. We customize our janitorial programs to match your facility's unique requirements.</p>
+                        <a href="#" class="service-card-link">
+                            Janitorial Service
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Office Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Office Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">Transform your Sydney office with HygieneXperts's professional office cleaning services. We offer daily and after-hours cleaning schedules, comprehensive desk and workstation sanitizing, conference room and breakroom maintenance, and customized cleaning packages for offices of all sizes.</p>
+                        <a href="#" class="service-card-link">
+                            Office Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Window Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-window-restore"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Window Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">Crystal-clear windows enhance your business's professional appearance. HygieneXperts – Sydney Commercial Cleaning specializes in interior and exterior window cleaning, high-rise window cleaning with certified rope access technicians, storefront and glass partition maintenance, and post-construction window cleanup.</p>
+                        <a href="#" class="service-card-link">
+                            Window Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Carpet Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-rug"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Carpet Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">Revitalize your commercial carpets with HygieneXperts's professional carpet cleaning services. We utilize hot water extraction steam cleaning methods, advanced spot and stain removal techniques, and specialized treatments for high-traffic areas to extend carpet life.</p>
+                        <a href="#" class="service-card-link">
+                            Carpet Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Industrial Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Industrial Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">HygieneXperts – Sydney Commercial Cleaning tackles the toughest industrial cleaning challenges in Sydney. Our services include warehouse floor scrubbing and degreasing, machine and equipment cleaning, loading dock pressure washing, and comprehensive manufacturing facility sanitation.</p>
+                        <a href="#" class="service-card-link">
+                            Industrial Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Post-Construction Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Post-Construction Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">Prepare your newly constructed or renovated space with HygieneXperts's thorough post-construction cleaning. We handle rough construction cleanup, final construction cleaning, comprehensive dust and debris removal, and paint or adhesive residue elimination.</p>
+                        <a href="#" class="service-card-link">
+                            Post-Construction Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 7: Upholstery Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Upholstery Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">Extend the life of your office furniture with HygieneXperts's professional upholstery cleaning. We specialize in office chair and furniture upholstery cleaning, fabric and leather furniture treatment, stain protection applications, and odor elimination services.</p>
+                        <a href="#" class="service-card-link">
+                            Upholstery Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 8: Deep Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Deep Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">When regular cleaning isn't enough, HygieneXperts – Sydney Commercial Cleaning delivers comprehensive deep cleaning services. Our thorough process includes full facility deep sanitization, intensive high-touch surface cleaning, HVAC vent dusting and disinfection, and emergency deep cleaning response.</p>
+                        <a href="#" class="service-card-link">
+                            Deep Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 9: Move-Out Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-truck-moving"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Move-Out Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">Ensure smooth property transitions with HygieneXperts's move-out cleaning services. We provide pre-lease cleaning for vacant properties, comprehensive move-out deep cleaning for offices, end-of-lease carpet and floor restoration, and rental turnover cleaning.</p>
+                        <a href="#" class="service-card-link">
+                            Move-Out Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 10: Emergency Cleaning Service -->
+                <div class="service-card-modern">
+                    <div class="service-card-header">
+                        <div class="service-card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Emergency Cleaning Service in Sydney</h3>
+                        <p class="service-card-description">When urgent cleaning needs arise, HygieneXperts – Sydney Commercial Cleaning responds immediately with 24/7 emergency cleaning services. We handle COVID-19 disinfection services, emergency deep cleaning for sick room incidents, comprehensive touchpoint disinfection, and EPA-approved disinfection programs.</p>
+                        <a href="#" class="service-card-link">
+                            Emergency Cleaning
+                            <span class="service-card-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="demo-info" style="margin-top: 50px;">
+            <h2>🎨 Gradient Color Scheme</h2>
+            <ul>
+                <li><strong>Card 1:</strong> Blue (#38b6ff → #004a94)</li>
+                <li><strong>Card 2:</strong> Purple (#667eea → #764ba2)</li>
+                <li><strong>Card 3:</strong> Cyan (#00d2ff → #3a7bd5)</li>
+                <li><strong>Card 4:</strong> Pink (#f093fb → #f5576c)</li>
+                <li><strong>Card 5:</strong> Light Blue (#4facfe → #00f2fe)</li>
+                <li><strong>Card 6:</strong> Green (#43e97b → #38f9d7)</li>
+                <li><strong>Card 7:</strong> Warm (#fa709a → #fee140)</li>
+                <li><strong>Card 8:</strong> Dark Cyan (#30cfd0 → #330867)</li>
+                <li><strong>Card 9:</strong> Soft Pastel (#a8edea → #fed6e3)</li>
+                <li><strong>Card 10:</strong> Rose (#ff9a9e → #fecfef)</li>
+            </ul>
+        </div>
+
+        <div class="demo-info">
+            <h2>📱 Responsive Breakpoints</h2>
+            <ul>
+                <li><strong>Desktop (992px+):</strong> 3 columns</li>
+                <li><strong>Tablet (768px - 991px):</strong> 2 columns</li>
+                <li><strong>Mobile (< 768px):</strong> 1 column</li>
+                <li><strong>Automatic font & spacing scaling</strong> at all breakpoints</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
